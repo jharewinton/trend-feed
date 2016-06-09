@@ -1,0 +1,21 @@
+{
+  "name": "trend-feed",
+  "version": "0.1.0",
+  "description": "A dashboard of aggregated trends",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jharewinton/trend-feed.git"
+  },
+  "author": "Jon Hare-Winton https://github.com/jharewinton and Shaun Dillon https://github.com/ShaunYearStrong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jharewinton/trend-feed/issues"
+  },
+  "homepage": "https://github.com/jharewinton/trend-feed#readme",
+  "dependencies": {
+    "react": "15.1.0",
+    "react-dom": "15.1.0",
+    "webpack": "1.13.1",
+    "webpack-dev-server": "1.14.1"
+  }
+}
