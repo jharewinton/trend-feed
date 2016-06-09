@@ -1,0 +1,17 @@
+.flag {
+  clear: both;
+  overflow: hidden;
+  $itemWidth: 10%;
+
+  &__item,  &__content {
+    float: left;
+  }
+
+  &__item {
+    width: $itemWidth;
+  }
+
+  &__content {
+    width: 100% - $itemWidth;
+  }
+}

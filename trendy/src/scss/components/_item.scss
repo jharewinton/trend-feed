@@ -1,0 +1,9 @@
+// Item - sits inside itemlist
+
+.item {
+  display: block;
+  background: $grey;
+  padding: $baseline;
+  border-top: 1px solid $guardianLightBlue;
+  margin-bottom: $baseline;
+}
