@@ -34,7 +34,6 @@ var TrendList = React.createClass({
 
   render: function() {
     var trendListItems = this.state.items.map(getTrendListItem);
-    console.log(trendListItems);
     return (
         <div className="trend-list">
           <h3 className="trend-list__heading">Current Trends</h3>

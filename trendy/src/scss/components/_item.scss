@@ -6,4 +6,24 @@
   padding: $baseline;
   border-top: 1px solid $guardianLightBlue;
   margin-bottom: $baseline;
+  overflow: hidden;
+
+  &__name {
+    color: $guardianBlue;
+  }
+
+  &__description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__count {
+    font-size: $largeFontSize;
+    color: $guardianLightBlue;
+  }
+
+  &__number {
+    font-size: $headerFontSize;
+    color: $guardianBlue;
+  }
 }

@@ -28,4 +28,13 @@ h2 {
 h3 {
   font-size: $largeFontSize;
   color: $guardianBlue;
+  margin-bottom: $baseline;
+}
+
+p {
+  margin-bottom: $baseline;
+}
+
+.text-blue {
+  color: $guardianBlue;
 }

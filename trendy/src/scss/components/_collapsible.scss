@@ -1,0 +1,27 @@
+.collapsible {
+  display: block;
+  position: relative;
+
+  &__btn {
+    display: block;
+    padding: $baseline;
+    border: none;
+    border-top: 1px solid darken($grey, 5);
+    background: $grey;
+    width: 100%;
+    cursor: pointer;
+    color: $guardianBlue;
+
+    &:hover {
+      background: darken($grey, 5);
+    }
+  }
+
+  &__content {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.breakdown {
+  display: block;
+  margin-top: $baseline;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $guardianLightBlue;
+  }
+
+  &__title {
+    font-size: $largeFontSize;
+    color: $guardianBlue;
+    margin-bottom: $baseline;
+  }
+}

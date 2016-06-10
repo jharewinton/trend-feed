@@ -9,9 +9,12 @@
 
   &__item {
     width: $itemWidth;
+    border-right: 1px solid $white;
+    padding-right: $baseline;
   }
 
   &__content {
+    padding-left: $baseline;
     width: 100% - $itemWidth;
   }
 }
