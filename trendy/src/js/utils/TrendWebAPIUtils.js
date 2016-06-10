@@ -18,8 +18,12 @@ module.exports = {
       //
       //       TrendServerActionCreators.receiveAll(rawItems);
       //     }).catch((err) => console.error('Error: ' + err));
-    
-      var getItems = TrendExampleData.init();
-      console.log(getItems);
+
+    // simulate retrieving data from a database
+    var rawItems = JSON.parse(localStorage.getItem('items'));
+    console.log(rawItems);
+
+    // simulate success callback
+    TrendServerActionCreators.receiveAll(rawItems);
   }
 };
