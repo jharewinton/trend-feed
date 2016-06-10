@@ -1,0 +1,123 @@
+<html lang="en">
+  <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"></script>
+	<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+	<script src="https://code.highcharts.com/mapdata/countries/gb/gb-all.js"></script>
+  </head>
+  <body>
+	<div id="container"  style="min-width: 310px; max-width: 940px; height: 400px; margin: 0;"></div>
+	<script>
+    var H = Highcharts,
+        map = Highcharts.maps['countries/gb/gb-all'],
+        chart;
+        var raw = [{
+             name: 'Canterbury',
+             count: 816,
+             lat: 51.280233,
+             lon: 1.0789089,
+           },{
+             name: 'Carmarthen East and Dinefwr',
+             count: 280,
+             lat: 51.85762,
+             lon: -4.312131
+           },{
+             name: 'Banbury',
+             count: 609,
+             lat: 52.0629009,
+             lon: -1.339775
+           },{
+             name: 'Islington South and Finsbury',
+             count: 1059,
+             lat: 51.5465063,
+             lon: -0.1058058
+           },{
+             name: 'Guildford',
+             count: 200,
+             lat: 51.23622,
+             lon: -0.570409
+           },{
+             name: 'Scunthorpe',
+             count: 297,
+             lat: 53.588646,
+             lon: -0.654413
+           },{
+             name: 'Merthyr Tydfil and Rhymney',
+             count: 201,
+             lat: 51.8622523,
+             lon: -4.3945034
+           },{
+             name: 'Wokingham',
+             count: 591,
+             lat: 51.410457,
+             lon: -0.833861,
+                 dataLabels: {
+                     align: 'left',
+                     x: 5,
+                     verticalAlign: 'middle'
+                 }
+           }
+         ];
+	data = raw.map(function(element){
+		return {capital:element.name, z:element.count, lat:element.lat, lon:element.lon}
+	});
+
+        $('#container').highcharts('Map', {
+
+            title: {
+                text: 'Highmaps lat/lon demo'
+            },
+
+            tooltip: {
+                pointFormat: '{point.capital}, {point.parentState}<br>' +
+                    'Votes: {point.z}'
+            },
+
+            xAxis: {
+                crosshair: {
+                    zIndex: 5,
+                    dashStyle: 'dot',
+                    snap: false,
+                    color: 'gray'
+                }
+            },
+
+            yAxis: {
+                crosshair: {
+                    zIndex: 5,
+                    dashStyle: 'dot',
+                    snap: false,
+                    color: 'gray'
+                }
+            },
+
+            series: [{
+                name: 'Basemap',
+                mapData: map,
+                borderColor: '#606060',
+                nullColor: 'rgba(200, 200, 200, 0.2)',
+                showInLegend: false
+            }, {
+                name: 'Separators',
+                type: 'mapline',
+                data: H.geojson(map, 'mapline'),
+                color: '#101010',
+                enableMouseTracking: false,
+                showInLegend: false
+            }, {
+                type: 'mapbubble',
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.capital}'
+                },
+                name: 'Cities',
+                data: data,
+                maxSize: '12%',
+                color: H.getOptions().colors[0]
+            }]
+        });
+
+        chart = $('#container').highcharts();
+	</script>
+  </body>
+</html>
