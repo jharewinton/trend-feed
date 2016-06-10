@@ -1,7 +1,9 @@
 package controllers
 
 import javax.inject._
+
 import play.api._
+import play.api.libs.json.Json
 import play.api.mvc._
 
 /**
@@ -9,7 +11,7 @@ import play.api.mvc._
  * application's home page.
  */
 @Singleton
-class HomeController @Inject() extends Controller {
+class PetitionController @Inject() extends Controller {
 
   /**
    * Create an Action to render an HTML page with a welcome message.
@@ -18,7 +20,8 @@ class HomeController @Inject() extends Controller {
    * a path of `/`.
    */
   def index = Action {
-    Ok(views.html.index("Your new application is ready."))
+    val feed = GvtPetitionsFeed.getPetitions()
+    Ok(Json.toJson(feed))
   }
 
 }
