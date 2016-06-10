@@ -1,0 +1,21 @@
+// Import all partials
+
+// Modules - no output scss
+@import
+  'modules/typography',
+  'modules/spacing',
+  'modules/colors';
+
+// Vendor - 3rd party scss
+@import
+  'vendor/reset';
+
+// Components
+@import
+  'components/base',
+  'components/footer',
+  'components/header',
+  'components/content',
+  'components/flag',
+  'components/item',
+  'components/itemlist';

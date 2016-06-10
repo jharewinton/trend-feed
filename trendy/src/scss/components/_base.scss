@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: $baseFontSize;
+  font-family: $baseFontFamily;
+  color: $baseFontColor;
+  background: $white;
+}
+
+a {
+  color: $guardianBlue;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: $headerFontSize;
+}
+
+h2 {
+  font-size: $largeFontSize;
+}
+
+h3 {
+  font-size: $largeFontSize;
+  color: $guardianBlue;
+}

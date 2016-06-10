@@ -1,0 +1,13 @@
+// Header
+
+.header {
+  width: 100%;
+  padding: $baseline;
+  background: $guardianBlue;
+  color: $white;
+  border-bottom: $halfBaseline solid $guardianDarkBlue;
+
+  &__link {
+    color: $white;
+  }
+}
