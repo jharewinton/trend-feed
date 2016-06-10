@@ -40,7 +40,8 @@ object GvtPetitionsFeed {
   def createConstituencyCount(jsValue: JsValue): ConstituencyCount = {
     val name = (jsValue \ "name").get.as[String]
     val count = (jsValue \ "signature_count").get.as[Int]
-    ConstituencyCount(name, count)
+    val onsCode = (jsValue \ "ons_code").get.as[String]
+    ConstituencyCount(name, count, onsCode)
   }
 
 
