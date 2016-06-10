@@ -1,20 +1,44 @@
 var React = require('react');
+var TrendListItemBreakdownMap = require('./TrendListItemBreakdownMap.react');
+var TrendListItemBreakdownList = require('./TrendListItemBreakdownList.react');
 
 var ReactPropTypes = React.PropTypes;
-
 
 var TrendListItemBreakdown = React.createClass({
 
   propTypes: {
-    breakdown: ReactPropTypes.object
+    item: ReactPropTypes.object
   },
+
+  getInitialState: function(){
+    return {
+      mapView: false
+    }
+  },
+
+  toggleMap: function(){
+    this.setState( { mapView : !this.state.mapView } );
+  },
+
   render: function() {
-    var breakdown = this.props.breakdown;
+    var item = this.props.item;
+
+    var breakdownView = null;
+    if (this.state.mapView) {
+      breakdownView = <TrendListItemBreakdownMap
+          breakdown={item.constituencyCounts}
+            />;
+    } else {
+      breakdownView = <TrendListItemBreakdownList
+              constituencyCounts={item.constituencyCounts}
+            />
+    }
+
     return (
-      <div className="breakdown">
-        <h5 className="breakdown__title">{breakdown.name}</h5>
-        <p className="breakdown__content">Signatures : <span className="text-blue">{breakdown.count}</span></p>
-      </div>
+        <div>
+          <button className="btn" onClick={this.toggleMap}>Toggle map view</button>
+          {breakdownView}
+        </div>
     );
   }
 

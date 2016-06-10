@@ -3,14 +3,6 @@ var React = require('react');
 
 var ReactPropTypes = React.PropTypes;
 
-function getTrendListItemBreakdown(constituencyCount) {
-  return (
-      <TrendListItemBreakdown
-          breakdown={constituencyCount}
-      />
-  );
-}
-
 var TrendListItem = React.createClass({
 
   propTypes: {
@@ -30,7 +22,6 @@ var TrendListItem = React.createClass({
 
   render: function() {
     var item = this.props.item;
-    var trendListItemBreakdowns = item.constituencyCounts.map(getTrendListItemBreakdown);
     return (
       <li className="item">
         <div className="flag">
@@ -46,7 +37,7 @@ var TrendListItem = React.createClass({
         <div className="collapsible">
           <button className="collapsible__btn" onClick={this.toggleContent}>Show breakdown by constituency</button>
           <div className={this.state.collapsed ? "collapsible__content" : "collapsible__content--active collapsible__content"}>
-            {trendListItemBreakdowns}
+            <TrendListItemBreakdown item={item} />
           </div>
         </div>
       </li>

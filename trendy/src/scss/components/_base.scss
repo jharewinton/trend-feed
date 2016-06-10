@@ -38,3 +38,18 @@ p {
 .text-blue {
   color: $guardianBlue;
 }
+
+.btn {
+  border: none;
+  border-bottom: 1px solid $guardianLightBlue;
+  margin-bottom: $baseline;
+  background: none;
+  padding: $baseline;
+  cursor: pointer;
+  display: block;
+
+  &:hover {
+    background: darken($grey, 5);
+  }
+
+}

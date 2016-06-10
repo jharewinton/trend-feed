@@ -14,8 +14,8 @@ module.exports = {
           {
             name: 'Canterbury',
             count: 816,
-            lat: 1.0789089,
-            lon: 51.280233
+            lat: 51.280233,
+            lon: 1.0789089
           },{
             name: 'Carmarthen East and Dinefwr',
             count: 280,
