@@ -15,42 +15,42 @@ module.exports = {
             name: 'Canterbury',
             count: 816,
             lat: 1.0789089,
-            long: 51.280233
+            lon: 51.280233
           },{
             name: 'Carmarthen East and Dinefwr',
             count: 280,
             lat: 51.85762,
-            long: -4.312131
+            lon: -4.312131
           },{
             name: 'Banbury',
             count: 609,
             lat: 52.0629009,
-            long: -1.339775
+            lon: -1.339775
           },{
             name: 'Islington South and Finsbury',
             count: 1059,
             lat: 51.5465063,
-            long: -0.1058058
+            lon: -0.1058058
           },{
             name: 'Guildford',
             count: 200,
             lat: 51.23622,
-            long: -0.570409
+            lon: -0.570409
           },{
             name: 'Scunthorpe',
             count: 297,
             lat: 53.588646,
-            long: -0.654413
+            lon: -0.654413
           },{
             name: 'Merthyr Tydfil and Rhymney',
             count: 201,
             lat: 51.8622523,
-            long: -4.3945034
+            lon: -4.3945034
           },{
             name: 'Wokingham',
             count: 591,
             lat: 51.410457,
-            long: -0.833861
+            lon: -0.833861
           }
         ]
       },
