@@ -9,7 +9,6 @@ var _items = {};
 
 function _addItems(rawItems) {
   rawItems.forEach(function(item) {
-    console.log(item);
     if (!_items[item.id]) {
       _items[item.id] = TrendItemUtils.convertRawItem(item);
     }

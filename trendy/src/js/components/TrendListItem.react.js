@@ -32,14 +32,16 @@ var TrendListItem = React.createClass({
     var item = this.props.item;
     var trendListItemBreakdowns = item.constituencyCounts.map(getTrendListItemBreakdown);
     return (
-      <li className="item flag">
-        <div className="flag__item">
-          <p className="item__number">{item.id + 1}</p>
-        </div>
-        <div className="flag__content">
-          <h3 className="item__name">{item.name}</h3>
-          <p className="item_description">{item.description}</p>
-          <p className="item__count">Total Signatures: {item.signatureCount}</p>
+      <li className="item">
+        <div className="flag">
+          <div className="flag__item">
+            <p className="item__number">{item.id + 1}</p>
+          </div>
+          <div className="flag__content">
+            <h3 className="item__name">{item.name}</h3>
+            <p className="item__description">{item.description}</p>
+            <p className="item__count">Total Signatures: {item.signatureCount}</p>
+          </div>
         </div>
         <div className="collapsible">
           <button className="collapsible__btn" onClick={this.toggleContent}>Show breakdown by constituency</button>

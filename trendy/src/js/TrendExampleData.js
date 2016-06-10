@@ -57,7 +57,7 @@ module.exports = {
       {
         type: 'petition',
         name: 'Everyone should have a free fluffy sheep',
-        description: 'ljshgjsakdfgjkhasfd',
+        description: 'Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that\'s what you see at a toy store. And you must think you\'re in a toy store, because you\'re here shopping for an infant named Jeb.',
         signatureCount: 23978432,
         url: '',
         timestamp: Date.now() - 99999,
@@ -76,41 +76,41 @@ module.exports = {
       },
       {
         type: 'petition',
-        name: 'Everyone should have a free fluffy sheep',
-        description: 'ljshgjsakdfgjkhasfd',
+        name: 'More worker\'s rights for Goblins',
+        description: 'Now that we know who you are, I know who I am. I\'m not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain\'s going to be? He\'s the exact opposite of the hero. And most times they\'re friends, like you and me! I should\'ve known way back when... You know why, David? Because of the kids. They called me Mr Glass.',
         signatureCount: 23978432,
         url: '',
         timestamp: Date.now() - 99999,
         constituencyCounts: [
           {
-            name: 'lishjdfkdsf',
+            name: 'Mordor',
             count: 213324
           },{
-            name: 'lishjdfkdsf',
-            count: 213324
+            name: 'Klendathu',
+            count: 124
           },{
-            name: 'lishjdfkdsf',
-            count: 213324
+            name: 'Toy town',
+            count: 234
           }
         ]
       },
       {
         type: 'petition',
-        name: 'Everyone should have a free fluffy sheep',
-        description: 'ljshgjsakdfgjkhasfd',
+        name: 'Better roads to Mt. Doom',
+        description: 'Well, the way they make shows is, they make one show. That show\'s called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they\'re going to make more shows. Some pilots get picked and become television programs. Some don\'t, become nothing. She starred in one of the ones that became nothing.',
         signatureCount: 23978432,
         url: '',
         timestamp: Date.now() - 99999,
         constituencyCounts: [
           {
-            name: 'lishjdfkdsf',
-            count: 213324
+            name: 'The Shire',
+            count: 32443
           },{
-            name: 'lishjdfkdsf',
-            count: 213324
+            name: 'Mina Tirith',
+            count: 324
           },{
-            name: 'lishjdfkdsf',
-            count: 213324
+            name: 'Edorath',
+            count: 243
           }
         ]
       }
