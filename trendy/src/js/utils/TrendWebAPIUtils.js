@@ -21,8 +21,9 @@ module.exports = {
 
     // simulate retrieving data from a database
     var rawItems = JSON.parse(localStorage.getItem('items'));
-    console.log(rawItems);
 
+    // Fake an ID
+    rawItems.forEach((item, index) => item.id = index);
     // simulate success callback
     TrendServerActionCreators.receiveAll(rawItems);
   }

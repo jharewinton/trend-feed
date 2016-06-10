@@ -22,10 +22,18 @@ module.exports = {
         signatureCount: 23978432,
         url: '',
         timestamp: Date.now() - 99999,
-        constituencyCounts: {
-          name: 'lishjdfkdsf',
-          count: 213324
-        }
+        constituencyCounts: [
+          {
+            name: 'lishjdfkdsf',
+            count: 213324
+          },{
+            name: 'lishjdfkdsf',
+            count: 213324
+          },{
+            name: 'lishjdfkdsf',
+            count: 213324
+          }
+        ]
       },
       {
         type: 'petition',
@@ -34,10 +42,18 @@ module.exports = {
         signatureCount: 23978432,
         url: '',
         timestamp: Date.now() - 99999,
-        constituencyCounts: {
-          name: 'lishjdfkdsf',
-          count: 213324
-        }
+        constituencyCounts: [
+          {
+            name: 'lishjdfkdsf',
+            count: 213324
+          },{
+            name: 'lishjdfkdsf',
+            count: 213324
+          },{
+            name: 'lishjdfkdsf',
+            count: 213324
+          }
+        ]
       },
       {
         type: 'petition',
@@ -46,10 +62,18 @@ module.exports = {
         signatureCount: 23978432,
         url: '',
         timestamp: Date.now() - 99999,
-        constituencyCounts: {
-          name: 'lishjdfkdsf',
-          count: 213324
-        }
+        constituencyCounts: [
+          {
+            name: 'lishjdfkdsf',
+            count: 213324
+          },{
+            name: 'lishjdfkdsf',
+            count: 213324
+          },{
+            name: 'lishjdfkdsf',
+            count: 213324
+          }
+        ]
       }
     ]));
   }

@@ -3,10 +3,10 @@ var React = require('react');
 
 var ReactPropTypes = React.PropTypes;
 
-function getTrendListItemBreakdown(constituencyCounts) {
+function getTrendListItemBreakdown(constituencyCount) {
   return (
       <TrendListItemBreakdown
-          breakdown={constituencyCounts}
+          breakdown={constituencyCount}
       />
   );
 }
@@ -19,7 +19,7 @@ var TrendListItem = React.createClass({
 
   render: function() {
     var item = this.props.item;
-    var trendListItemBreakdowns = this.state.items.constituencyCounts.map(getTrendListItemBreakdown);
+    var trendListItemBreakdowns = item.constituencyCounts.map(getTrendListItemBreakdown);
     return (
       <li className="item flag">
         <div className="flag__item">

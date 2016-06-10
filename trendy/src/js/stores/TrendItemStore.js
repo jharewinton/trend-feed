@@ -9,6 +9,7 @@ var _items = {};
 
 function _addItems(rawItems) {
   rawItems.forEach(function(item) {
+    console.log(item);
     if (!_items[item.id]) {
       _items[item.id] = TrendItemUtils.convertRawItem(item);
     }
@@ -39,7 +40,7 @@ var TrendItemStore = assign({}, EventEmitter.prototype, {
   getAll: function() {
     var _itemsArray = [];
 
-    for (var item in _items){
+    for (var item in _items) {
       _itemsArray.push(_items[item]);
     }
 

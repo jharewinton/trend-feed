@@ -12,8 +12,8 @@ var TrendListItemBreakdown = React.createClass({
     var breakdown = this.props.breakdown;
     return (
       <div className="breakdown">
-        <h5 class="breakdown__title">{breakdown.name}</h5>
-        <p class="breakdown__content">{breakdown.count}</p>
+        <h5 className="breakdown__title">{breakdown.name}</h5>
+        <p className="breakdown__content">{breakdown.count}</p>
       </div>
     );
   }
